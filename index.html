@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv = "Content-type" content = "text/html; charset = utf-8">
+		<title >Board Game Tiler</title>
+		<script src="JS/boardgenerator.js" type = "text/javascript" charset = "utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/tilerstyles.css">
+	</head>
+	
+	<body onload="newArea()">
+		<div id = "page">
+		
+			<h1>Board Game Tiler</h1>
+			
+			<div id = "globals">
+				<div>Width: <input type="number" id = "width" value = "8"></div>
+				<div id="centerGlobal">Height: <input type="number" id = "height" value = "4"></div>
+				<div>Tile Size: <input type="number" id = "tileSize" value = "128"></div>
+			</div>
+		
+			<canvas width = "1024" height = "512" id = "board" style = "border:black 1px solid;">
+				Your browser does not support HTML5 Canvas. Please shift to another browser.
+			</canvas>
+			
+			<button onclick="generateBoard()" type="button" class="bigButton">GENERATE BOARD</button>
+			
+			<div id="leftColumn"></div>
+			
+			<div id="rightColumn"></div>
+			
+			<button onclick="newArea()" type="button" class="bigButton">Add Another Area</button>
+			
+		</div>
+		
+		<div class = "fieldSet" id="newArea">
+			<input type="text" value="New Area (Click to Rename)" class = "areaName" onclick="this.select();">
+			<table class = "fsTable">
+				<tr>
+					<td>Area Width:</td>
+					<td><input type="number" class = "areaWidth" value = "5"></td>
+					<td>Area Height:</td>
+					<td><input type="number" class = "areaHeight" value = "4"></td>
+				</tr>
+				<tr>
+					<td>Area X:</td>
+					<td><input type="number" class = "areaX" value = "0"></td>
+					<td>Area Y:</td>
+					<td><input type="number" class = "areaY" value = "0"></td>
+				</tr>
+			</table>
+			<hr/>
+
+			<div class = "tiles">
+				<table class = "fsTable">
+					<tr>
+						<td>Tile:</td>
+						<td><input type="text" class = "tile" value = ""></td>
+						<td>Quantity:</td>
+						<td><input type="number" class = "quantity" value = "100"></td>
+					</tr>
+				</table>
+				
+				<button onclick="newTile(this)" type="button">Add Another Tile</button>
+
+			</div>
+				
+		</div>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+body	{	background-image: url( "../images/background.jpg" );
+			text-align: center;	}
+
+#page	{	width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 1024px;	}
+			
+#leftColumn, #rightColumn	{	width: 50%;
+								padding: 0;
+								margin: 0;
+								border: 0;
+								float: left;	}
+				
+.fieldSet	{	width: 85%;
+				padding: 0 5% 1em 5%;
+				margin-top:	1em;
+				margin-bottom: 2em;
+				border: 2px solid orange;
+				border-radius:	2em;
+				background:	orange;	}
+				
+#leftColumn .fieldSet	{ margin-right: 5%;	}
+
+#rightColumn .fieldSet	{ margin-left: 5%;	}
+				
+.fsTable td			{	width: 25%;
+						text-align: right;	}
+
+.fsTable input		{	width: 100%;	}
+
+.fsTable		{	width: 100%;
+					border: 0px;	}
+					
+#globals	{	margin-left: auto;
+				margin-right: auto;
+				height: 3.3em;
+				border: 2px solid orange;
+				border-radius:	2em;
+				background:	orange;	}
+					
+#globals div	{	float: left;
+				width: 30%;
+				padding-top: 1em;
+				padding-bottom: 1em;
+				margin-bottom: 1em;	}
+				
+#globals input	{	max-width: 100px;	}
+				
+#centerGlobal	{	margin-left: 5%;
+					margin-right: 5%;	}
+					
+.tile	{ width: 40%;	}
+
+.quantity	{ width: 25%;	}
+
+.bigButton	{	width: 100%;
+				padding: 1em 0 1em 0;	}
+				
+.tiles button	{	width:	100%;
+					margin-top: 0.5em;	}
+					
+
+#board	{	background-color: white;	}
+
+h1	{	font-size: 72pt;
+		margin:	0;
+		padding: 0;	}
+		
+.areaName	{	font-size: 20pt;
+				width: 100%;
+				text-align: center;
+				background: transparent;
+				border: none;
+				margin: 0.5em 0 0.5em 0;	}		
+		
+#newArea	{	display: none;	}
